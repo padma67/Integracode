@@ -10,7 +10,7 @@ IF NOT EXISTS(select 1 from ijps.mst_jrnl_meta_key_dtl where keyid=15 and keynam
 BEGIN
 set IDENTITY_INSERT ijps.mst_jrnl_meta_key_dtl ON
 insert into ijps.mst_jrnl_meta_key_dtl (keyid,keyname,Datatype,UpdatedBy,UpdatedDate,isActive)
-values(15,'LandesJrnlPE',bit,1,getdate(),1)
+values(15,'LandesJrnlPE','nvarchar,1,getdate(),1)
 set IDENTITY_INSERT ijps.mst_jrnl_meta_key_dtl OFF
 END
 
